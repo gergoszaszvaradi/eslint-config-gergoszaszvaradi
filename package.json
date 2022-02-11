@@ -1,0 +1,17 @@
+{
+  "name": "eslint-config-gergoszaszvaradi",
+  "version": "1.0.0",
+  "description": "Personal ESLint configuration",
+  "main": "index.js",
+  "scripts": {},
+  "repository": "https://github.com/gergoszaszvaradi/eslint-config-gergoszaszvaradi",
+  "author": "gergoszaszvaradi",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.11.0",
+    "@typescript-eslint/parser": "^5.11.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0"
+  }
+}
