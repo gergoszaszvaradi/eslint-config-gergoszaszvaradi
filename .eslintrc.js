@@ -1580,9 +1580,9 @@ module.exports = {
         "@typescript-eslint/explicit-member-accessibility": [
             "error",
             {
-                "accessibility": "no-public",
-                "overrides": {
-                    "properties": "explicit",
+                accessibility: "no-public",
+                overrides: {
+                    properties: "explicit",
                 },
             },
         ],
@@ -1593,7 +1593,7 @@ module.exports = {
         "@typescript-eslint/no-explicit-any": [
             "error",
             {
-                "ignoreRestArgs": true,
+                ignoreRestArgs: true,
             },
         ],
         "@typescript-eslint/no-extra-non-null-assertion": "error",
@@ -1603,14 +1603,26 @@ module.exports = {
         "@typescript-eslint/no-misused-new": "error",
         "@typescript-eslint/no-namespace": "error",
         "@typescript-eslint/no-this-alias": "error",
-        "@typescript-eslint/no-type-alias": "error",
+        "@typescript-eslint/no-type-alias": [
+            "error",
+            {
+                allowAliases: "in-unions-and-intersections",
+                allowCallbacks: "always",
+                allowConditionalTypes: "always",
+                allowConstructors: "always",
+                allowLiterals: "in-unions-and-intersections",
+                allowMappedTypes: "always",
+                allowTupleTypes: "always",
+                allowGenerics: "always",
+            },
+        ],
         "@typescript-eslint/no-shadow": "error",
         "@typescript-eslint/no-unused-vars": [
             "error",
             {
-                "vars": "all",
-                "args": "none",
-                "ignoreRestSiblings": true,
+                vars: "all",
+                args: "none",
+                ignoreRestSiblings: true,
             },
         ],
         "@typescript-eslint/no-non-null-assertion": "error",
