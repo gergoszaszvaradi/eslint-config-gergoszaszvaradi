@@ -424,12 +424,7 @@ module.exports = {
             "off",
         ],
         "no-use-before-define": [
-            "error",
-            {
-                functions: true,
-                classes: false,
-                variables: true,
-            },
+            "off",
         ],
         "array-bracket-newline": [
             "off",
@@ -1637,6 +1632,17 @@ module.exports = {
         "@typescript-eslint/no-unsafe-call": "error",
         "@typescript-eslint/no-unsafe-member-access": "error",
         "@typescript-eslint/no-unsafe-return": "error",
+        "@typescript-eslint/no-use-before-define": [
+            "error",
+            {
+                functions: true,
+                classes: false,
+                variables: true,
+                enums: false,
+                typedefs: false,
+                ignoreTypeReferences: true,
+            },
+        ],
         "@typescript-eslint/prefer-for-of": "error",
         "@typescript-eslint/prefer-function-type": "error",
         "@typescript-eslint/prefer-readonly": "error",
