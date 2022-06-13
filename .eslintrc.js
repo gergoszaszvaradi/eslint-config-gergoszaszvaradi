@@ -1567,7 +1567,7 @@ module.exports = {
         yoda: [
             "error",
         ],
-        "@typescript-eslint/adjacent-overload-signatures": "error",
+        "@typescript-eslint/adjacent-overload-signatures": "off",
         "@typescript-eslint/ban-ts-comment": "error",
         "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
         "@typescript-eslint/consistent-type-imports": "off",
@@ -1648,6 +1648,13 @@ module.exports = {
         "@typescript-eslint/prefer-readonly": "error",
         "@typescript-eslint/prefer-string-starts-ends-with": "error",
         "@typescript-eslint/promise-function-async": "error",
+        "@typescript-eslint/type-annotation-spacing": [
+            "error",
+            {
+                before: true,
+                after: true
+            }
+        ]
     },
     settings: {
         "import/resolver": {
